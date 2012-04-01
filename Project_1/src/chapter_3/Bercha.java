@@ -1,6 +1,6 @@
 package chapter_3;
 /*
- * Author: Felipe Alves
+ * Author: Felipe Alves Lourenço Pereira
  */
 
 public class Bercha {
