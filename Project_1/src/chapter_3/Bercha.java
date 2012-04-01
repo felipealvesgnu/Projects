@@ -1,4 +1,7 @@
 package chapter_3;
+/*
+ * Author: Felipe Alves
+ */
 
 public class Bercha {
 
