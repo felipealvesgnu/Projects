@@ -24,6 +24,7 @@ enum Pet{DOG, CAT, HORSE}
 class MapT {
 	public static void main(String[] args) {
 		Map<Object, Object> m = new HashMap<Object, Object>(); 
+		
 		m.put("k1", new Galo("aiko"));
 		m.put("k2", Pet.CAT);
 		m.put(Pet.DOG, "Dog");
@@ -31,6 +32,7 @@ class MapT {
 		
 		m.put(g, "key"); // reference with the above reference g
 		g.name = "Fuga"; // change the g's reference 		
+		
 		
 		System.out.println(m.get("k1"));
 		System.out.println(m.get(Pet.DOG));
