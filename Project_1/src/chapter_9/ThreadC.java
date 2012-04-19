@@ -17,7 +17,6 @@ class B implements Runnable{
 class ThreadC {
 	public static void main(String[] args) {
 		new A(new B()).start();
-		
 	}
 }
   
