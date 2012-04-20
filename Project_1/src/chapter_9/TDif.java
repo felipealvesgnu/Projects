@@ -1,12 +1,15 @@
 package chapter_9;
 
 public class TDif extends Thread {
+	
 	TDif(String s){
 		super(s);
 	}
+	
 	public void run(){
 		dado();
 	}
+	
 	public synchronized void dado(){
 		for (int a = 0; a < 3; a++) 
 			System.out.println(Thread.currentThread().getName());

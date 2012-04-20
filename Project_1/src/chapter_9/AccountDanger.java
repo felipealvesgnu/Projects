@@ -11,6 +11,7 @@ class Account {
 		balance = balance - amount;
 	}
 }
+
 public class AccountDanger implements Runnable {
 	private Account acct = new Account();
 	
@@ -18,8 +19,8 @@ public class AccountDanger implements Runnable {
 		AccountDanger r = new AccountDanger();
 		Thread one 		= new Thread(r);
 		Thread two 		= new Thread(r);
-		one.setName("Fred");
-		two.setName("Lucy");
+		one.setName("Fred(Thread-1)");
+		two.setName("Lucy(Thread-2)");
 		one.start();
 		two.start();		
 	}
@@ -37,6 +38,7 @@ public class AccountDanger implements Runnable {
 	private synchronized void makeWithdrawal(int amt) {
 		if (acct.getBalance() >= amt) {
 			System.out.println(Thread.currentThread().getName() + " is going to withdraw");
+			System.out.println("-------------------------------");
 			try {
 				Thread.sleep(500);
 			} catch(InterruptedException ex) { }	
