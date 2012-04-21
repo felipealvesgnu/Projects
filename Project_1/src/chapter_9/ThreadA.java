@@ -6,8 +6,7 @@ class ThreadA {
 
 	public static void main(String[] args) { //here we have a Thread
 		ThreadB b = new ThreadB();
-		b.start();
-		
+		b.start();		
 		synchronized (b) {
 			try{
 				System.out.println("Waiting for b complete...");

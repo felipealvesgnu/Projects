@@ -5,7 +5,7 @@ import java.text.NumberFormat;
 public class Slice {
 	public static void main(String[] args) {
 		String s = "987.123456";
-		double d = 971987.123456;
+		double d = 971987.1234947;
 
 		NumberFormat nf = NumberFormat.getInstance();
 		nf.setMaximumFractionDigits(5);
@@ -15,6 +15,7 @@ public class Slice {
 		} catch (Exception e) {
 			System.out.println("got exc");
 		}
+		
 	}
 
 }

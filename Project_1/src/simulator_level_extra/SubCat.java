@@ -1,7 +1,8 @@
 package simulator_level_extra;
 
 class Cat{
-	Cat(int c){System.out.print("cat" + c + "");}	
+	Cat(int c){System.out.print("cat" + c + "");}
+	
 }
 
 class SubCat extends Cat{
