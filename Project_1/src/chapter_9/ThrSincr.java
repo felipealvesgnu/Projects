@@ -1,5 +1,9 @@
 package chapter_9;
 
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class ThrSincr implements Runnable{
 	private int z = 10;
 	
@@ -12,6 +16,7 @@ public class ThrSincr implements Runnable{
 			z -= 5;
 			System.out.println("value " + z);
 			try{
+	
 				Thread.sleep(100); //we use the sleep method when want create an opportunity to others threads execute.
 								   // nevertheless it won't cause effect because the method value is synchronized
 			}catch(InterruptedException e){
