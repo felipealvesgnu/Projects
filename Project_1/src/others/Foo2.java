@@ -1,6 +1,6 @@
+package others;
 
 public class Foo2 {
-
 	public void metodoPaiFoo2(){
 		
 	}

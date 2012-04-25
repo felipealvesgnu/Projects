@@ -1,3 +1,5 @@
+package others;
+
 class Animal{
 	static void doStuff(){
 		System.out.println("a ");
@@ -8,8 +10,7 @@ class Animal{
 class Dog extends Animal{
 	static void doStuff(){
 		System.out.println("d ");
-	}
-	
+	}	
 	public static void main(String[] args) {
 		Animal [] a = {new Animal(), 
 				new Dog(), 
@@ -17,6 +18,7 @@ class Dog extends Animal{
 		for (int i = 0; i < a.length; i++) {
 			a[i].doStuff();
 		}
+		
 	}
 
 }
