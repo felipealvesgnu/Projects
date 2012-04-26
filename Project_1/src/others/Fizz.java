@@ -1,3 +1,5 @@
+package others;
+
 
 public class Fizz {
 	int x = 5;

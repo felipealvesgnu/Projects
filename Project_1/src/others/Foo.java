@@ -1,3 +1,5 @@
+package others;
+
 class Bar{
 	int barNum = 28;
 }
