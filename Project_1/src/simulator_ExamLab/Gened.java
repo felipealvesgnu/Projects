@@ -4,7 +4,7 @@ public class Gened{
 
     public static void main(String argv[]){
          doNumber(2);
-         doNumber(2L);
+         doNumber(2L);	
          doNumber(new int[]{1,5,3,4});
          doNumber(new Integer(2));
          doNumber(new Integer[2]); //cria somente um objeto com 2 dimensoes 

@@ -1,7 +1,8 @@
 package chapter_9;
 
 interface Cook{
-		public void coo();		
+	final	int MY_VALUE = 10;
+	public void coo();		
 }
 
 class FaceAno {

@@ -1,3 +1,5 @@
+package others;
+
 class A{}
 
 class B extends A{ }
