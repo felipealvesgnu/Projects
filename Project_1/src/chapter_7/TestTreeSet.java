@@ -11,11 +11,13 @@ public class TestTreeSet {
 		s.add("a"); s.add("b"); s.add("c"); s.add("d"); s.add("e");  
 		
 		//subs = (TreeSet) s.subSet("b", true, "d", true);
-		subs = (TreeSet) s.subSet("b",true, "d",true);
+		subs = (TreeSet<String>) s.subSet("b",true, "d",true);
 		s.add("g");
 		s.pollFirst();
 		s.pollFirst();
-		s.add("c2");		
+		s.add("c2");	
+		subs.add("c4");
+		subs.add("e");
 		System.out.println(s.size() + " " + subs.size());
 	}
 

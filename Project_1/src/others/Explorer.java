@@ -9,7 +9,7 @@ public class Explorer {
 		
 		for(int i=606;i < 613;i++)
 			if(i % 606 == 0) s.add(i);
-		subs = (TreeSet) s.subSet(608, true, 611, true);
+		subs = (TreeSet) s.subSet(606,611);
 		s.add(629);
 		System.out.println(s + " " + subs);
 	}

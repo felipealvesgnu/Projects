@@ -2,7 +2,6 @@ package chapter_3;
 
 
 public class Static {
-
 	static{
 		int x = 5;
 	}
